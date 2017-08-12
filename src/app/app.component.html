@@ -1,0 +1,6 @@
+<button (click)="getDateByZone('PST')" [ngClass]="{ selected: selectedTimeZone === 'PST' }">PST</button>
+<button (click)="getDateByZone('MST')" [ngClass]="{ selected: selectedTimeZone === 'MST' }">MST</button>
+<button (click)="getDateByZone('CST')" [ngClass]="{ selected: selectedTimeZone === 'CST' }">CST</button>
+<button (click)="getDateByZone('EST')" [ngClass]="{ selected: selectedTimeZone === 'EST' }">EST</button>
+<button (click)="getDateByZone('clear')">Clear</button>
+{{ this.time | json }}
